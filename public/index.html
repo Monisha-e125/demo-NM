@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Portal Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      height: 60px;
+      background: #1f2937;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links a {
+      margin: 0 12px;
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #fff;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #111827;
+      min-height: calc(100vh - 60px);
+      color: #cbd5e1;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background: #1f2937;
+      color: #fff;
+    }
+
+    /* Main */
+    .main {
+      flex: 1;
+      padding: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .stat {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #2563eb;
+    }
+
+    .actions button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .actions button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">College Portal</div>
+    <div class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#">Training</a>
+      <a href="#">Tasks</a>
+      <a href="#">Support</a>
+    </div>
+    <div>🔔 👤</div>
+  </div>
+
+  <!-- Body -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#">📊 Dashboard</a>
+      <a href="#">🎓 Placement Training</a>
+      <a href="#">📝 Assigned Tasks</a>
+      <a href="#">📈 Progress</a>
+      <a href="#">📅 Calendar</a>
+      <a href="#">❓ Help Center</a>
+      <a href="#">⚙️ Settings</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Welcome back, Student 👋</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Completed Tasks</h3>
+          <div class="stat">18</div>
+        </div>
+
+        <div class="card">
+          <h3>Pending Tasks</h3>
+          <div class="stat">5</div>
+        </div>
+
+        <div class="card">
+          <h3>Training Hours</h3>
+          <div class="stat">42</div>
+        </div>
+
+        <div class="card">
+          <h3>Performance Score</h3>
+          <div class="stat">87%</div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="card">
+        <h3>Quick Actions</h3>
+        <div class="actions">
+          <button>View Tasks</button>
+          <button>Submit Work</button>
+          <button>Request Support</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
