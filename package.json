@@ -1,5 +1,15 @@
 {
+
+
+  "name": "college-dashboard-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "lucide-react": "^0.562.0"
+    "cors": "^2.8.5",
+    "express": "^4.22.1"
+
   }
 }
