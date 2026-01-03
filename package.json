@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "college-dashboard-backend",
   "version": "1.0.0",
@@ -10,3 +11,20 @@
     "express": "^4.22.1"
   }
 }
+=======
+{
+
+
+  "name": "college-dashboard-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.1"
+
+  }
+}
+>>>>>>> 3559586f47f4111804eeddacbe8b59b00256784e
